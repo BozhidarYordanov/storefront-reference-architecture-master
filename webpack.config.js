@@ -60,7 +60,7 @@ module.exports = [{
                     loader: 'css-loader',
                     options: {
                         url: false,
-                        minimize: true
+                        minimize: false
                     }
                 }, {
                     loader: 'postcss-loader',
