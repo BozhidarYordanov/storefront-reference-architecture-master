@@ -1,6 +1,7 @@
 'use strict'
 
 var server = require('server');
+var HookMgr = require('dw/system/HookMgr');
 server.extend(module.superModule);
 
 server.append('Show', function (req, res, next) {
@@ -21,6 +22,12 @@ server.append('Show', function (req, res, next) {
             text: 'Lorem ipsum dolor sit amet, cibo utroque ne vis, has no sumo graece.',
             rating: 1.5
         }];
+
+        if(HookMgr.hasHook("app.scripts.hooks.homework")) {
+            HookMgr.callHook(
+                "app.scripts.hooks.homework"
+            );
+        };
 
         res.setViewData(viewData);
         next();
