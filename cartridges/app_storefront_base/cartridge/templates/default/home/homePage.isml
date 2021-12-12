@@ -5,6 +5,9 @@
         assets.addCss('/css/homePage.css');
     </isscript>
 
+    <isslot id="homework" description="Homework slot." context="global" />
+    <isslot id="homework2" description="Homework slot2." context="global" />
+
     <!-- +1.888.555.0199 --><!--This phone is a requirement to support existing Gomez monitor of SiteGenesis. Demadware customers can remove this.-->
     <div class="home-main homepage">
         <isslot id="home-main-m" description="Main home page slot." context="global" />

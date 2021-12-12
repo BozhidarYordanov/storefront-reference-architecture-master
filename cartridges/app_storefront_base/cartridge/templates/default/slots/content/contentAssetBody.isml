@@ -2,4 +2,7 @@
     <isloop items="${slotcontent.content}" var="contentAsset">
         <isprint value="${contentAsset.custom.body}" encoding="off"/>
     </isloop>
+    <isif condition="${customer.registered}">
+        <p>Hello, <isprint value="${customer.profile.firstName}" /></p>
+    </isif>
 </isif>

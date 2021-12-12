@@ -141,20 +141,29 @@ function Handle(basket, paymentInformation, paymentMethodID, req) {
  * @return {Object} returns an error object
  */
 function Authorize(orderNumber, paymentInstrument, paymentProcessor) {
+    var OrderMgr = require("dw/order/OrderMgr");
     var serverErrors = [];
     var fieldErrors = {};
     var error = false;
+    var order = OrderMgr.getOrder(orderNumber);
 
-    try {
-        Transaction.wrap(function () {
-            paymentInstrument.paymentTransaction.setTransactionID(orderNumber);
-            paymentInstrument.paymentTransaction.setPaymentProcessor(paymentProcessor);
-        });
-    } catch (e) {
+    if (order.customerEmail.split('@')[1] !== 'host.com') {
         error = true;
         serverErrors.push(
             Resource.msg('error.technical', 'checkout', null)
         );
+    } else {
+        try {
+            Transaction.wrap(function () {
+                paymentInstrument.paymentTransaction.setTransactionID(orderNumber);
+                paymentInstrument.paymentTransaction.setPaymentProcessor(paymentProcessor);
+            });
+        } catch (e) {
+            error = true;
+            serverErrors.push(
+                Resource.msg('error.technical', 'checkout', null)
+            );
+        }
     }
 
     return { fieldErrors: fieldErrors, serverErrors: serverErrors, error: error };

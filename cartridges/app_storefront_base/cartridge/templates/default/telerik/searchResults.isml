@@ -1,0 +1,19 @@
+<iscomment> <isif condition="${pdict.format == "ajax"}" </iscomment>
+
+
+<isdecorate template="common/layout/page">
+<isset name="resultsCount" value="${pdict.searchResults.count}" scope="page"/>
+<isset name="query" value="${pdict.query}" scope="page"/>
+
+<isif condition="${resultsCount > 0}">
+    <div>Results for searching for ${query} - <isprint value="${resultsCount}" style="INTEGER" /></div>
+    <isloop items="${pdict.searchResults.productSearchHits}" var="productHit">
+        <isset name="product" value="${productHit.getProduct()}" scope="page" />
+        <div>${product.name}</div>
+        <a href="${URLUtils.url("Product-Show", pid, product.ID)}"></a>
+        <div><img src="${product.getImage('small').httpURL}" alt="${product.getImage('small').alt}" /></div>
+    </isloop>
+<iselse/>
+    No results for ${query}
+</isif>
+</isdecorate>
