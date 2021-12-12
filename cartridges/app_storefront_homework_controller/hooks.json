@@ -1,0 +1,8 @@
+{
+    "hooks": [
+        {
+            "name": "app.scripts.hooks.homework",
+            "script": "~/cartridge/scripts/hooks/homeworkHook.js"
+        }
+    ]
+}
