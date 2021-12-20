@@ -156,6 +156,8 @@ module.exports = server.exports();
                         profile.setLastName(formInfo.lastName);
                         profile.setEmail(formInfo.email);
                         profile.setPhoneHome(formInfo.phone);
+                        profile.residence = formInfo.residence;
+                        profile.interest = formInfo.phone;
                     });
 
                     // Send account edited email
