@@ -1,0 +1,5 @@
+<div class="container">
+    <hr class="margin-top">
+    <h1 class="page-title">${Resource.msg('title.cart','cart',null)}</h1>
+    <hr class="no-margin-top">
+</div>
