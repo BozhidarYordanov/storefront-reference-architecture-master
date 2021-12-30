@@ -13,7 +13,7 @@
         <isslot id="home-main-m" description="Main home page slot." context="global" />
     </div>
 
-    <isinclude template="swapi" />
+    <isinclude url="${URLUtils.url('DeathStar-Info')}"/>
 
     <div class="container home-categories homepage">
         <div class="row home-main-categories no-gutters">

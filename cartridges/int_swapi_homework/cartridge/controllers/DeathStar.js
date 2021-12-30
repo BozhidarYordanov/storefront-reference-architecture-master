@@ -1,32 +1,33 @@
 'use strict';
 
 /**
- * @namespace Swapi
+ * @namespace DeathStar
  */
 
 var server = require('server');
 
 var csrfProtection = require('*/cartridge/scripts/middleware/csrf');
 var cache = require('*/cartridge/scripts/middleware/cache');
-var consentTracking = require('*/cartridge/scripts/middleware/consentTracking');
+var deathStarInfoService = require('*/cartridge/scripts/DeathStarInfoService.js');
 
 /**
- * Swapi-Get : The Swapi-Get endpoint is responsible for retrieving information for the ‘Death Star’ (starship).
- * @name Swapi-Get
+ * DeathStar-Info : The DeathStar-Info endpoint is responsible for retrieving information for the ‘Death Star’ (starship).
+ * @name DeathStar-Info
  * @param {middleware} - server.middleware.include
  * @param {middleware} - cache.applyDefaultCache
  * @param {renders} - isml
  * @param {serverfunction} - get
  */
 server.get(
-    'Get', 
+    'Info', 
     server.middleware.include, 
     cache.applyDefaultCache,
     function (req, res, next) {
 
-    var deathStar = '';
-    res.render('swapi', { 
-        deathStar 
+    var deathStarInfo = JSON.parse(deathStarInfoService.getDeathStarInfo());
+
+    res.render('deathStar', {
+        deathStarInfo : deathStarInfo
     });
     next();
 });

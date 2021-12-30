@@ -1,0 +1,9 @@
+<div class="container">
+    <hr class="margin-top">
+    <h1 class="text-center">These are the desirable atributes separated by commas, in this order: <br> name, manufacturer, starship_class:</h1>
+    <h2 class="text-center">${pdict.deathStarInfo.name}, ${pdict.deathStarInfo.manufacturer}, ${pdict.deathStarInfo.starship_class}</h2>
+    <isif condition="${pdict.deathStarInfo.cost_in_credits}">
+        <h2 class="text-center">$$$$$$$$$$$$$$$$$</h2>
+    </isif>
+    <hr class="no-margin-top">
+</div>
