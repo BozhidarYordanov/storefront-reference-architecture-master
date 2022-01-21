@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19" secure="false">
+    <field 
+        formid="phone"
+        label="label.input.phone.notifyForm"
+        mandatory="true"
+        min-length="5"
+        max-length="20"
+        regexp="^\s*(\+)?(359)8[789]\d{1}(|-| )\d{3}(|-| )\d{3}\s*$"
+        missing-error="error.message.required"
+        parse-error="error.message.parse.phone.profile.form"
+        range-error="error.message.between5and20"
+        type="string" /> 
+</form>

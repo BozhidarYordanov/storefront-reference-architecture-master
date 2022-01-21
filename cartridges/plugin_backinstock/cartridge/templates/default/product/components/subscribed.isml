@@ -1,0 +1,5 @@
+<isdecorate template="common/layout/page">
+    <isif condition="${!empty(pdict.alreadySubscribed) && pdict.alreadySubscribed.isOnline()}">
+        <h1 class="header page-title"><isprint value="${pdict.alreadySubscribed.custom.body}" encoding="off" /></h1>
+    </isif>
+</isdecorate>

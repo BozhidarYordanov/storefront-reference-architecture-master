@@ -1,0 +1,28 @@
+<isif condition="${!product.available}">
+
+    <button style="display:block; margin:0 auto"
+            class="btn btn-primary"
+            data-toggle="modal" data-target="#NotifyModal"
+            data-pid="${product.id}">
+        <img style="width:25px" src="https://media.istockphoto.com/vectors/bell-icon-vector-id636632652?k=20&m=636632652&s=170667a&w=0&h=FhNrzLuSOpVqhoP7tleDx2HUPaT6ppseOd6AiTv8-6A=" alt="Bell icon" />
+        <isif condition="${!empty(pdict.buttonAsset) && pdict.buttonAsset.isOnline()}">
+            <isprint value="${pdict.buttonAsset.custom.body}" encoding="off" />
+        </isif>
+    </button>
+
+    <div id="NotifyModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <isif condition="${!empty(pdict.headerAsset) && pdict.headerAsset.isOnline()}">
+                        <isprint value="${pdict.headerAsset.custom.body}" encoding="off" />
+                    </isif>
+                </div>
+                <div class="modal-body">
+                    <isinclude template="product/components/notifyForm" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</isif>
