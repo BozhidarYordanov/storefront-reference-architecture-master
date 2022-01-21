@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary">
+
+    <content content-id="open-modal-button">
+        <display-name xml:lang="x-default">Open modal button</display-name>
+        <display-name xml:lang="fr-FR">Open modal button - fr</display-name>
+        <display-name xml:lang="it-IT">Open modal button - it</display-name>
+        <display-name xml:lang="ja-JP">Open modal button - jp</display-name>
+        <display-name xml:lang="zh-CN">Open modal button - cn</display-name>
+        <description xml:lang="x-default">This is the text of the button that opens the modal from which we subscribe to products.</description>
+        <online-flag>true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="body" xml:lang="x-default">Notify me when back in stock</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="fr">M'avertir du retour en stock</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="fr-FR">M'avertir du retour en stock</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="it">Avvisami quando torna disponibile</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="it-IT">Avvisami quando torna disponibile</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="ja">入荷時にお知らせください</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="ja-JP">入荷時にお知らせください</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="zh">有貨時通知我</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="zh-CN">有貨時通知我</custom-attribute>
+        </custom-attributes>
+    </content>
+
+    <content content-id="back-in-stock-modal-title">
+        <display-name xml:lang="x-default">Back in stock modal title - default</display-name>
+        <display-name xml:lang="fr">Back in stock modal title - fr</display-name>
+        <display-name xml:lang="it">Back in stock modal title - it</display-name>
+        <display-name xml:lang="it-IT">Back in stock modal title - it_it</display-name>
+        <display-name xml:lang="ja-JP">Back in stock modal title - jp</display-name>
+        <display-name xml:lang="zh">Back in stock modal title - cn</display-name>
+        <display-name xml:lang="zh-CN">Back in stock modal title - cn-cn</display-name>
+        <description xml:lang="x-default">This is the title of the modal for back in stock notifications.</description>
+        <online-flag>true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;h4 class="modal-title"&gt;Please, fill your phone number to subscribe for notification&lt;/h4&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="fr">&lt;h4 class="modal-title"&gt;S'il vous plaît, remplissez votre numéro de téléphone pour vous abonner à la notification&lt;/h4&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="it">&lt;h4 class="modal-title"&gt;Per favore, inserisci il tuo numero di telefono per iscriverti alla notifica&lt;/h4&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="it-IT">&lt;h4 class="modal-title"&gt;Per favore, inserisci il tuo numero di telefono per iscriverti alla notifica&lt;/h4&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="ja">&lt;h4class = "modal-title"&gt;通知を購読するには電話番号を入力してください&lt;/ h4&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="ja-JP">&lt;h4class = "modal-title"&gt;通知を購読するには電話番号を入力してください&lt;/ h4&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="zh">&lt;h4 class="modal-title"&gt;請填寫您的電話號碼訂閱通知&lt;/h4&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="zh-CN">&lt;h4 class="modal-title"&gt;請填寫您的電話號碼訂閱通知&lt;/h4&gt;</custom-attribute>
+        </custom-attributes>
+    </content>
+
+    <content content-id="ajax-fail">
+        <display-name xml:lang="x-default">Notify me fail</display-name>
+        <display-name xml:lang="fr-FR">Notify me fail - fr</display-name>
+        <display-name xml:lang="it-IT">Notify me fail - it</display-name>
+        <display-name xml:lang="ja-JP">Notify me fail - jp</display-name>
+        <display-name xml:lang="zh-CN">Notify me fail - cn</display-name>
+        <description xml:lang="x-default">This is the message that is displayed if the subscription for the product was unsuccessful.</description>
+        <online-flag>true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;p&gt;Ops... something went wrong. Please, try again.&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="fr">&lt;p&gt;Oups... quelque chose s'est mal passé. Veuillez réessayer.&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="fr-FR">&lt;p&gt;Oups... quelque chose s'est mal passé. Veuillez réessayer.&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="it">&lt;p&gt;Ops... qualcosa è andato storto. Per favore, riprova.&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="it-IT">&lt;p&gt;Ops... qualcosa è andato storto. Per favore, riprova.&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="ja">&lt;p&gt;おっと...何かがうまくいかなかった。 もう一度やり直してください。&lt;/ p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="ja-JP">&lt;p&gt;おっと...何かがうまくいかなかった。 もう一度やり直してください。&lt;/ p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="zh">&lt;p&gt;糟糕……出了點問題。 請再試一次。&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="zh-CN">&lt;p&gt;糟糕……出了點問題。 請再試一次。&lt;/p&gt;</custom-attribute>
+        </custom-attributes>
+    </content>
+
+    <content content-id="ajax-success">
+        <display-name xml:lang="x-default">Notify me success</display-name>
+        <display-name xml:lang="fr-FR">Notify me success - fr</display-name>
+        <display-name xml:lang="it-IT">Notify me success - it</display-name>
+        <display-name xml:lang="ja-JP">Notify me success - jp</display-name>
+        <display-name xml:lang="zh-CN">Notify me success - cn</display-name>
+        <description xml:lang="x-default">This is the message that is displayed if you have successfully subscribed to this product.</description>
+        <online-flag>true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;p&gt;Your subscription was processed successfully&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="fr">&lt;p&gt;Votre abonnement a été traité avec succès&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="fr-FR">&lt;p&gt;Votre abonnement a été traité avec succès&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="it">&lt;p&gt;Il tuo abbonamento è stato elaborato correttamente&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="it-IT">&lt;p&gt;Il tuo abbonamento è stato elaborato correttamente&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="ja">&lt;p&gt;サブスクリプションは正常に処理されました&lt;/ p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="ja-JP">&lt;p&gt;サブスクリプションは正常に処理されました&lt;/ p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="zh">&lt;p&gt;您的訂閱已成功處理&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="zh-CN">&lt;p&gt;您的訂閱已成功處理&lt;/p&gt;</custom-attribute>
+        </custom-attributes>
+    </content>
+
+    <content content-id="already-subscribed">
+        <display-name xml:lang="x-default">Already subscribed</display-name>
+        <display-name xml:lang="fr">Already subscribed</display-name>
+        <display-name xml:lang="fr-FR">Already subscribed</display-name>
+        <display-name xml:lang="it">Already subscribed</display-name>
+        <display-name xml:lang="ja">Already subscribed</display-name>
+        <display-name xml:lang="ja-JP">Already subscribed</display-name>
+        <display-name xml:lang="zh">Already subscribed</display-name>
+        <display-name xml:lang="zh-CN">Already subscribed</display-name>
+        <description xml:lang="x-default">This is the message that is displayed if you have already subscribed to this product.</description>
+        <online-flag>true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;p&gt;You have already subscribed to this product.&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="fr">&lt;p&gt;Vous êtes déjà abonné à ce produit.&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="fr-FR">&lt;p&gt;Vous êtes déjà abonné à ce produit.&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="it">&lt;p&gt;Ti sei già abbonato a questo prodotto.&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="it-IT">&lt;p&gt;Ti sei già abbonato a questo prodotto.&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="ja">&lt;p&gt;すでにこの製品を購読しています。&lt;/ p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="ja-JP">&lt;p&gt;すでにこの製品を購読しています。&lt;/ p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="zh">&lt;p&gt;您已經訂閱了該產品。&lt;/p&gt;</custom-attribute>
+            <custom-attribute attribute-id="body" xml:lang="zh-CN">&lt;p&gt;您已經訂閱了該產品。&lt;/p&gt;</custom-attribute>
+        </custom-attributes>
+    </content>
+
+</library>

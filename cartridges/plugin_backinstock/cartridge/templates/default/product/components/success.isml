@@ -1,0 +1,5 @@
+<isdecorate template="common/layout/page">
+    <isif condition="${!empty(pdict.successAsset) && pdict.successAsset.isOnline()}">
+        <h1 class="header page-title"><isprint value="${pdict.successAsset.custom.body}" encoding="off" /></h1>
+    </isif>
+</isdecorate>

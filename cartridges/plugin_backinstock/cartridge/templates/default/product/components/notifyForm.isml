@@ -1,0 +1,26 @@
+<form action="/on/demandware.store/Sites-RefArchGlobal-Site/en_GB/Twilio-Subscribe" class=""
+    method="POST" name="notify" id="notify">
+    <div class="form-group required">
+        <label class="form-control-label" for="phone" style="float:left">
+            <isprint value="${Resource.msg('label.input.phone.notify', 'forms', null)}" encoding="htmlcontent" />
+        </label>
+        <input type="text" class="form-control" id="phone" placeholder="+359888888888" <isprint value="${pdict.notifyForm.phone.attributes}"
+            encoding="off" /> />
+        <div class="invalid-feedback"></div>
+    </div>
+
+    <input type="hidden" name="pid" id="pid" value="${product.id}" encoding="off" />
+    <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}" />
+
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-block btn-outline-primary"
+                data-dismiss="modal">${Resource.msg('product.modal.cancel', 'forms', null)}</button>
+        </div>
+
+        <div class="col">
+            <button type="submit" name="notify" class="btn btn-save btn-block btn-primary"
+                id="notify-me">${Resource.msg('product.modal.submit', 'forms', null)}</button>
+        </div>
+    </div>
+</form>

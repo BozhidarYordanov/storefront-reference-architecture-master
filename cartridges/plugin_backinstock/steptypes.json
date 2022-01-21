@@ -1,0 +1,12 @@
+{
+    "step-types": {
+        "script-module-step":
+        [
+            {
+                "@type-id":"custom.NotifyJobStep",
+                "description":"My notify script step type",
+                "module":"plugin_backinstock/cartridge/scripts/steps/notifyModuleJob"
+            }
+        ]
+    }
+}
